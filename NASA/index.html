@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA | DEV panel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="nasa_fav.png" type="image/x-icon">
+</head>
+<body>
+<div class="boss">
+ <header class="header">
+  <div class="logo_div">
+   <a class="lg_a" href="#">
+    <img class="logo" src="nasa_fav.png" alt="logo" draggable="false">
+   </a>
+  </div>
+  <div class="analysis_share_div">
+   <div class="analysis_div">
+   <div class="back_arrow_div">
+    <svg width="20px" height="20px" viewBox="0 0 24 24">
+     <path fill="#ffffff" d="m4 10l-.707.707L2.586 10l.707-.707zm17 8a1 1 0 1 1-2 0zM8.293 15.707l-5-5l1.414-1.414l5 5zm-5-6.414l5-5l1.414 1.414l-5 5zM4 9h10v2H4zm17 7v2h-2v-2zm-7-7a7 7 0 0 1 7 7h-2a5 5 0 0 0-5-5z" />
+    </svg>
+   </div>
+   <div class="analysis_text_div">Comments Analysis</div>
+  </div>
+  <div class="share_div">Share
+   <div class="share_svg_div">
+    <svg width="18px" height="18px" viewBox="0 0 24 24">
+  <path d="M0 0h24v24H0z" fill="none"/>
+  <g fill="none">
+    <path d="M19.49 7.097a3 3 0 1 0-3-5.197a3 3 0 0 0 3 5.197m-3 15.002a3 3 0 1 0 3-5.197a3 3 0 0 0-3 5.197M6.5 14.597a3 3 0 1 0-3-5.197a3 3 0 0 0 3 5.197" />
+    <path d="M3.5 14.599a3 3 0 1 0 3-5.197a3 3 0 0 0-3 5.197" />
+    <path stroke="currentColor" stroke-linecap="square" stroke-width="2" d="m7.599 13.501l7.794 4.5m-7.794-7.502l7.794-4.5m0 0a3 3 0 1 1 5.196-3a3 3 0 0 1-5.196 3Zm0 12.002a3 3 0 1 1 5.196 3a3 3 0 0 1-5.196-3Zm-7.794-7.503a3 3 0 1 1-5.197 3a3 3 0 0 1 5.197-3Zm0 3.002a3 3 0 1 1-5.197-3a3 3 0 0 1 5.197 3Z" />
+  </g>
+</svg>
+   </div>
+  </div>
+ </div>
+ <div class="not_acc_div">
+  <div class="notif_div">
+   <svg width="25px" height="25px" viewBox="0 0 24 24">
+    <g fill="none" stroke="#ffffff" stroke-width="1.5">
+     <path d="M18.75 9.71v-.705C18.75 5.136 15.726 2 12 2S5.25 5.136 5.25 9.005v.705a4.4 4.4 0 0 1-.692 2.375L3.45 13.81c-1.011 1.575-.239 3.716 1.52 4.214a25.8 25.8 0 0 0 14.06 0c1.759-.498 2.531-2.639 1.52-4.213l-1.108-1.725a4.4 4.4 0 0 1-.693-2.375Z" />
+     <path stroke-linecap="round" d="M7.5 19c.655 1.748 2.422 3 4.5 3s3.845-1.252 4.5-3" opacity=".5"/>
+    </g>
+   </svg>
+  </div>
+  <div class="account_div">
+   <div class="account_avatar">
+    <img class="avatar" src="girl.png" alt="avatar" draggable="false">
+   </div>
+   <div class="account_name">Robert Robertson<p class="mail">robert@gmail.com</p></div>
+  </div>
+  <div class="nasa_ai">
+   <img class="page_avatar" src="nasa_ai.png" alt="logo" draggable="false">
+  </div>
+ </div>
+ </header>
+ <menu class="menu">
+  <div class="left_menu">
+   <div class="l_menu_info">
+    <div class="overview_div">Overview ...</div>
+    <div class="search_div">
+     <div class="search_small">
+     <div class="search_svg_div">
+      <svg  width="20px" height="20px" viewBox="0 0 24 24">
+       <path fill="#ffffff" d="M9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l5.6 5.6q.275.275.275.7t-.275.7t-.7.275t-.7-.275l-5.6-5.6q-.75.6-1.725.95T9.5 16m0-2q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14" />
+      </svg>
+     </div>
+     <input class="search" type="text" placeholder="Search Country" maxlength="30">
+     </div>
+    </div>
+    <div class="settings_widgets_div">
+     <div class="settings_div">
+      <svg class="settings_svg" width="25px" height="25px" viewBox="0 0 24 24">
+       <g fill="none" stroke="#ffffff" stroke-width="1.5">
+        <circle cx="12" cy="12" r="3" />
+        <path stroke-linecap="round" d="M3.661 10.64c.473.296.777.802.777 1.36s-.304 1.064-.777 1.36c-.321.203-.529.364-.676.556a2 2 0 0 0-.396 1.479c.052.394.285.798.75 1.605c.467.807.7 1.21 1.015 1.453a2 2 0 0 0 1.479.396c.24-.032.483-.13.819-.308a1.62 1.62 0 0 1 1.567.008c.483.28.77.795.79 1.353c.014.38.05.64.143.863a2 2 0 0 0 1.083 1.083C10.602 22 11.068 22 12 22s1.398 0 1.765-.152a2 2 0 0 0 1.083-1.083c.092-.223.129-.483.143-.863c.02-.558.307-1.074.79-1.353a1.62 1.62 0 0 1 1.567-.008c.336.178.58.276.82.308a2 2 0 0 0 1.478-.396c.315-.242.548-.646 1.014-1.453c.208-.36.369-.639.489-.873m-.81-2.766a1.62 1.62 0 0 1-.777-1.36c0-.559.304-1.065.777-1.362c.321-.202.528-.363.676-.555a2 2 0 0 0 .396-1.479c-.052-.394-.285-.798-.75-1.605c-.467-.807-.7-1.21-1.015-1.453a2 2 0 0 0-1.479-.396c-.24.032-.483.13-.82.308a1.62 1.62 0 0 1-1.566-.008a1.62 1.62 0 0 1-.79-1.353c-.014-.38-.05-.64-.143-.863a2 2 0 0 0-1.083-1.083C13.398 2 12.932 2 12 2s-1.398 0-1.765.152a2 2 0 0 0-1.083 1.083c-.092.223-.129.483-.143.863a1.62 1.62 0 0 1-.79 1.353a1.62 1.62 0 0 1-1.567.008c-.336-.178-.58-.276-.82-.308a2 2 0 0 0-1.478.396C4.04 5.79 3.806 6.193 3.34 7c-.208.36-.369.639-.489.873" />
+       </g>
+      </svg>
+     </div>
+     <div class="widgets_div">
+      <div class="widget_counter_div">12</div>
+      Widgets
+     </div>
+    </div>
+   </div>
+   <div class="left_big_info">
+    <div class="first_row">
+     <div class="comments_div"></div>
+     <div class="com_with_emote"></div>
+     <div class="top_aga_div"></div>
+    </div>
+    <div class="second_row">
+     <div class="driver_div"></div>
+     <div class="com_by_age"></div>
+    </div>
+   </div>
+  </div>
+  <div class="right_menu"></div>
+ </menu>
+</div>    
+</body>
+</html>

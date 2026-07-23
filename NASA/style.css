@@ -1,0 +1,427 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+overflow: hidden;
+}
+
+:root {
+--gray: rgb(128, 128, 128);
+--gray-hover: rgb(44, 53, 71);
+--b-right: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+.boss {
+width: 100%;
+height: 100vh;
+}
+
+.header {
+width: 100%;
+height: 10%;
+background-color: rgb(31, 38, 46);
+display: flex;
+}
+
+.logo_div {
+width: 150px;
+height: 100%;
+display: flex;
+align-items: center;
+border-right: var(--b-right);
+}
+
+.lg_a {
+display: flex;
+justify-content: center;
+}
+
+.logo {
+width: 60%;
+height: 60%;
+transition: 0.3s;
+}
+
+.logo:hover {
+transform: scale(1.05);
+}
+
+.analysis_share_div {
+width: 600px;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-right: 20px;
+border-right: var(--b-right);
+}
+
+.analysis_div {
+width: 70%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.back_arrow_div {
+width: 35px;
+aspect-ratio: 1/1;
+background-color: var(--gray);
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+transition: 0.6s;
+}
+
+.back_arrow_div:hover {
+background-color: var(--gray-hover);
+transform: rotate(-360deg) scale(1.05);
+}
+
+.analysis_text_div {
+width: 180px;
+height: 30px;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1.2rem;
+}
+
+.share_div {
+width: 100px;
+height: 35px;
+background-color: var(--gray);
+border-radius: 20px;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+user-select: none;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.share_div:hover {
+background-color: var(--gray-hover);
+transform: scale(1.04);
+}
+
+.share_svg_div {
+width: 21px;
+aspect-ratio: 1/1;
+margin-left: 2px;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: 0.4s;
+}
+
+.share_div:hover .share_svg_div {
+transform: rotate(90deg);
+}
+
+.not_acc_div {
+width: 350px;
+height: 100%;
+border-right: var(--b-right);
+display: flex;
+align-items: center;
+padding-left: 15px;
+}
+
+.notif_div {
+width: 40px;
+aspect-ratio: 1/1;
+background-color: var(--gray);
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.notif_div:hover {
+background-color: var(--gray-hover);
+}
+
+.account_div {
+width: 250px;
+height: 100%;
+display: flex;
+align-items: center;
+padding-left: 10px;
+gap: 10px;
+}
+
+.account_avatar {
+width: 40px;
+aspect-ratio: 1/1;
+border-radius: 50%;
+cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.avatar {
+width: 100%;
+height: 100%;
+}
+
+.account_name {
+width: auto;
+max-width: 185px;
+height: 70%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+font-weight: 800;
+color: white;
+}
+
+.mail {
+font-weight: 400;
+}
+
+.nasa_ai {
+width: 35px;
+aspect-ratio: 1/1;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+border: 2px dotted white;
+transition: 2s;
+}
+
+.nasa_ai:hover {
+transform: rotate(360deg) scale(1.04);
+border-color: red;
+}
+
+.page_avatar {
+width: 100%;
+height: 100%;
+border-radius: 50%;
+transition: 2s;
+}
+
+.nasa_ai:hover .page_avatar {
+transform: rotate(-360deg);
+}
+
+.menu {
+width: 100%;
+height: 90%;
+background-color: green;
+}
+
+.left_menu {
+width: 70%;
+height: 100%;
+background-color: rgb(19, 22, 27);
+}
+
+.l_menu_info {
+width: 100%;
+height: 10%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-left: 20px;
+}
+
+.overview_div {
+width: 100px;
+height: 35px;
+border-radius: 18px;
+border: 1px solid white;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 0.9rem;
+user-select: none;
+cursor: pointer;
+transition: 0.3s;
+position: relative;
+}
+
+.overview_div::after {
+content: "+";
+width: 25px;
+aspect-ratio: 1/1;
+position: absolute;
+right: -26px;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: 0.3s;
+font-weight: 800;
+font-size: 1.4rem;
+}
+
+.overview_div:hover {
+transform: scale(1.04);
+}
+
+.overview_div:hover::after {
+transform: rotate(45deg);
+}
+
+.search_div {
+width: 250px;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.search_small {
+width: 90%;
+height: 65%;
+position: relative;
+}
+
+.search_svg_div {
+width: 20px;
+height: 20px;
+position: absolute;
+left: 5px;
+top: 30%;
+}
+
+.search {
+width: 100%;
+height: 100%;
+border-radius: 25px;
+border: 1px solid white;
+outline: none;
+padding-left: 28px;
+background-color: transparent;
+color: white;
+}
+
+.search::placeholder {
+color: white;
+}
+
+.settings_widgets_div {
+width: 200px;
+height: 100%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+.settings_div {
+width: 35px;
+aspect-ratio: 1/1;
+border-radius: 50%;
+background-color: var(--gray);
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.settings_svg {
+transition: 0.4s ease-out;
+}
+
+.settings_div:hover {
+background-color: var(--gray-hover);
+}
+
+.settings_div:hover .settings_svg {
+transform: rotate(90deg);
+}
+
+.widgets_div {
+width: 95px;
+height: 30px;
+background-color: transparent;
+border: 1px solid white;
+border-radius: 20px;
+padding-left: 3px;
+display: flex;
+align-items: center;
+color: white;
+user-select: none;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.widgets_div:hover {
+background-color: rgba(255, 255, 255, 0.266);
+}
+
+.widget_counter_div {
+aspect-ratio: 1/1;
+height: 85%;
+background-color: white;
+border-radius: 50%;
+margin-right: 3px;
+color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: 700;
+}
+
+.left_big_info {
+width: 100%;
+height: 90%;
+background-color: red;
+}
+
+.first_row {
+width: 60%;
+height: 120px;
+background-color: yellow;
+display: flex;
+justify-content: space-around;
+}
+
+.comments_div {
+width: 200px;
+height: 100%;
+background-color: black;
+border-radius: 15px;
+}
+
+.com_with_emote {
+width: 200px;
+height: 100%;
+background-color: black;
+border-radius: 15px;
+}
+
+.top_aga_div {
+width: 200px;
+height: 100%;
+background-color: black;
+border-radius: 15px;
+}
+
+.driver_div {
+width: 250px;
+height: 300px;
+background-color: black;
+border-radius: 15px;
+}
+
+.com_by_age {
+width: 250px;
+height: 300px;
+background-color: black;
+border-radius: 15px;
+}
